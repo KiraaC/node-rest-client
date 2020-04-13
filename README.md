@@ -1,4 +1,4 @@
-# node-rest-client
+# Steps to node-rest-client
 sudo apt install npm
 
 sudo npm install broswerify -g  not needed, because we ran this globally the first time
@@ -32,82 +32,17 @@ npm WARN node_rest_client@1.0.0 No repository field.
 my tree directory
 
 nodejs_setup_example
-
-nodejs_setup_example
-
-node_modules
-
-jquery
-
-node-rest-client
-
+  nodejs_setup_example
+    node_modules
+      jquery
+      node-rest-client
 …
+    resting.js
+    index.html
+    package.json
 
-resting.js
-
-index.html
-
-package.json
-
-setup index.html
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Node Resting Client Page</title>
-  </head>
-  <body>
-Something is written here
-    <script type="text/javascript" src="resting.js"></script>  </body>
-</html>
 
 setting up resting.js
-
-this is the original code from  
-
-alert("Loading awesome page");
-
-//Example POST method invocation
-var Client = require('node-rest-client').Client;
-
-var client = new Client();
-
-// set content-type header and data as json in args parameter
-var args = {
-    data: { "msg": "hello" },
-    headers: { "Content-Type": "application/json" }
-};
-
-client.post("http://10.99.99.202:3000/hash", args, function (data, response) {
-    // parsed response body as js object
-    console.log(data);
-    // raw response
-    console.log(response);
-});
-
-I alerted the ip address and port#
-
-alert("Loading awesome page");
-
-//Example POST method invocation
-var Client = require('node-rest-client').Client;
-
-var client = new Client();
-
-// set content-type header and data as json in args parameter
-var args = {
-    data: { "msg": "hello" },
-    headers: { "Content-Type": "application/json" }
-};
-
-client.post("http://10.99.99.9:8000/hash", args, function (data, response) {
-    // parsed response body as js object
-    console.log(data);
-    // raw response
-    console.log(response);
-});
-
 Save all files and run server
 
 python -m SimpleHTTPServer
@@ -124,11 +59,6 @@ Serving HTTP on 0.0.0.0 port 8000 ...
 10.99.99.205 - - [10/Apr/2020 15:50:54] "GET /resting.js HTTP/1.1" 200 -
 
 Type this in the Chrome browser Url.
-
 http://10.99.99.9:8000/
 
 success!  The Something is written here text appears. Loading awesome page alert pop up. 
-
-To change the port number add that <number> at the end
-
-python -m SimpleHTTPServer 3000
