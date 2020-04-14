@@ -61,4 +61,4 @@ Serving HTTP on 0.0.0.0 port 8000 ...
 Type this in the Chrome browser Url.
 http://10.99.99.9:8000/
 
-success!  The Something is written here text appears. Loading awesome page alert pop up. 
+The "Something is written here" text appears and the awesome page alert pop up. 
