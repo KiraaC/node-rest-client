@@ -1,17 +1,14 @@
 # Steps to node-rest-client
 sudo apt install npm
 
-sudo npm install broswerify -g  not needed, because we ran this globally the first time
+sudo npm install broswerify -g 
 
 npm init
-
-Use all the default settings <Enter>
-
-Then typed this:
+  Then use all the default settings <Enter>
 
 npm install jquery node-rest-client --save
 
-got this result
+I got this result
 
 npm install jquery node-rest-client --save
 node_rest_client@1.0.0 /home/kira/workspace/node_rest_client/node_rest_client
